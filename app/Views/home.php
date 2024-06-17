@@ -2,12 +2,12 @@
 
 <?php $this->section('content'); ?>
 <div class="container">
-	<div class="row">
+	<div class="row scrap-form">
 		<div class="col-md-7">
 			<input type="text" class="form-control" id="url">
 		</div>
 		<div class="col-md-5">
-			<button type="button" class="form-control">SCRAP</button>
+			<button type="button" class="form-control btn btn-secondary" id="scrapBtn">SCRAP</button>
 		</div>
 	</div>
 	<div id="table_container">
@@ -27,8 +27,13 @@
                 <?php }?>
             </tbody>
         </table>
-
-		<?= $pager->links('default') ?>
+        <div class="pagination-container">
+			<?= $pager->links('default') ?>
+		</div>
 	</div>
 </div>
+<?php echo $this->endSection(); ?>
+
+<?php $this->section('scripts'); ?>
+	<script type="text/javascript" src="<?php echo base_url('public/assets/js/home.js'); ?>"></script>
 <?php echo $this->endSection(); ?>

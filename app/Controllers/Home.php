@@ -9,11 +9,13 @@ class Home extends BaseController{
         $this->pages = new PagesModel();
     }
 
-    public function index()
-    {
+    public function index(){
+
+        $session = session();
         $pages=$this->pages;
 
-        $pages->select("pages.*,(SELECT COUNT(*) from page_links where page_id=pages.id) as total_links");
+        $pages->select("pages.*,(SELECT COUNT(*) from page_links where page_id=pages.id) as total_links")
+                ->where("user_id",$session->id);
         
         $data=[];
         $data['pages']=$pages->paginate(10);

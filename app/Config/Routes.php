@@ -35,17 +35,13 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
 
+$routes->get('/', 'Home::index',['filter' => 'authGuard']);
 $routes->get('/page/(:num)', 'Page::index/$1');
-
 $routes->post('/page/save', 'Page::save',['filter' => 'authGuard']);
-$routes->get('/page/save', 'Page::save');
-/*
- *  Paginas estáticas ***SIEMPRE DEBE QUEDAR AL FINAL****
- */
-
-$routes->get('/(:segment)', 'Paginas::index/$1');
+$routes->get('/login', 'Login::index');
+$routes->post('/login/validate_user', 'Login::validate_user');
+$routes->post('/login/register_user', 'Login::register_user');
 
 
 /*

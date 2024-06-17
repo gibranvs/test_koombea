@@ -351,3 +351,110 @@ in APPPATH/Views/home.php on line 25.
  7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 19:17:46 --> syntax error, unexpected '$data' (T_VARIABLE)
+in APPPATH/Controllers/Page.php on line 17.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Page.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Page')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Page')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Page')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Page', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 19:18:04 --> syntax error, unexpected '$this' (T_VARIABLE)
+in APPPATH/Controllers/Page.php on line 18.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Page.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Page')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Page')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Page')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Page', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 19:18:23 --> Undefined property: App\Controllers\Page::$page
+in APPPATH/Controllers/Page.php on line 17.
+ 1 APPPATH/Controllers/Page.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Page::$page', 'APPPATH/Controllers/Page.php', 17, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Page->index('1')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 20:50:44 --> Undefined property: App\Controllers\Page::$post
+in APPPATH/Controllers/Page.php on line 25.
+ 1 APPPATH/Controllers/Page.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Page::$post', 'APPPATH/Controllers/Page.php', 25, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Page->save()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 21:35:27 --> Declaration of App\Controllers\Admin\Login::validate() must be compatible with CodeIgniter\Controller::validate($rules, array $messages = Array): bool
+in APPPATH/Controllers/Login.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-16 22:30:40 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Login.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Login.php', 42, [...])
+ 2 APPPATH/Controllers/Login.php(42): count(0)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->register_user()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 22:34:36 --> Call to a member function getResult() on null
+in APPPATH/Models/UsersModel.php on line 28.
+ 1 APPPATH/Libraries/AuthManager.php(13): App\Models\UsersModel->userAuth('gtc', 'f0578f1e7174b1a41c4ea8c6e17f7a8a3b88c92a')
+ 2 APPPATH/Controllers/Login.php(18): App\Libraries\AuthManager::logIn('gtc', 'f0578f1e7174b1a41c4ea8c6e17f7a8a3b88c92a')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->validate_user()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 22:35:14 --> Class 'App\Libraries\SessionManager' not found
+in APPPATH/Libraries/AuthManager.php on line 15.
+ 1 APPPATH/Controllers/Login.php(18): App\Libraries\AuthManager::logIn('gtc', 'f0578f1e7174b1a41c4ea8c6e17f7a8a3b88c92a')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->validate_user()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 22:40:05 --> Undefined variable: sessiondata
+in APPPATH/Libraries/AuthManager.php on line 20.
+ 1 APPPATH/Libraries/AuthManager.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sessiondata', 'APPPATH/Libraries/AuthManager.php', 20, [...])
+ 2 APPPATH/Controllers/Login.php(18): App\Libraries\AuthManager::logIn('gtc', 'f0578f1e7174b1a41c4ea8c6e17f7a8a3b88c92a')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->validate_user()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 22:43:38 --> Undefined variable: session
+in APPPATH/Controllers/Home.php on line 17.
+ 1 APPPATH/Controllers/Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Home.php', 17, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:10:01 --> Undefined variable: session
+in APPPATH/Controllers/Login.php on line 21.
+ 1 APPPATH/Controllers/Login.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Login.php', 21, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->validate_user()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:12:08 --> Undefined variable: session
+in APPPATH/Controllers/Login.php on line 21.
+ 1 APPPATH/Controllers/Login.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Login.php', 21, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->validate_user()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:16:59 --> Undefined variable: _SESSION
+in APPPATH/Views/login.php on line 17.
+ 1 APPPATH/Views/login.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _SESSION', 'APPPATH/Views/login.php', 17, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/login.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('login.php', [], true)
+ 5 APPPATH/Controllers/Login.php(10): view('login.php')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-16 23:19:36 --> Undefined variable: _SESSION
+in APPPATH/Controllers/Login.php on line 11.
+ 1 APPPATH/Controllers/Login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: _SESSION', 'APPPATH/Controllers/Login.php', 11, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

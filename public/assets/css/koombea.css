@@ -1,0 +1,40 @@
+#login-container{
+	max-width:500px;
+	margin:auto;
+	padding:10px;
+}
+
+#login-container .form-control{
+	margin-top:20px;
+}
+
+#table_container{
+	margin:20px 0;
+}
+
+.pagination li{
+	background: gray;
+	padding:0 6px;
+	margin: 3px;
+	border-radius: 2px;
+}
+
+.pagination li.active{
+	background: lightgray;
+	border:solid 1px gray;
+}
+
+.pagination li a{
+	color: white;
+	text-decoration: none;
+}
+
+.page_title{
+	font-size:22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.scrap-form{
+	margin: 20px 0;
+}

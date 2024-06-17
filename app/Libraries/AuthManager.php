@@ -6,25 +6,22 @@ class AuthManager
 {
     protected $auth;
 
-    public static function logIn($email,$password)
-    {
-        $authModel = new \App\Models\AuthModel();
-        $user = $authModel->userAuth($email,$password);
+    public static function logIn($email,$password){
 
-        if($user == TRUE){
-            $sessiondata=$authModel->getUserData($email,$password);
+        $users = new \App\Models\UsersModel();
 
-            SessionManager::addSessionData($sessiondata);
-
-        }else if($user == FALSE){
+        $user = $users->userAuth($email,$password); //get the data from the user or false if not valid credentials
+        if($user){
+            SessionManager::addSessionData($user); //add user data to session
+            $sessiondata= TRUE;
+        }else{
             $sessiondata = FALSE;
         }
 
         return $sessiondata;
     }
 
-    public static function logOut()
-    {
+    public static function logOut(){
 
         SessionManager::logOut();
         return 0;
