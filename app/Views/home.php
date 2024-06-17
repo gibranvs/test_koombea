@@ -2,6 +2,15 @@
 
 <?php $this->section('content'); ?>
 <div class="container">
+
+	<div class="row">
+		<div class="col-sm-10">
+			Hi, <?= $username ?> 
+		</div>
+		<div class="col-sm-2 text-end">
+			<a href="logout">LOGOUT</a>
+		</div>
+	</div>
 	<div class="row scrap-form">
 		<div class="col-md-7">
 			<input type="text" class="form-control" id="url">

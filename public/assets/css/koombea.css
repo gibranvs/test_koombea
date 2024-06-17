@@ -38,3 +38,15 @@
 .scrap-form{
 	margin: 20px 0;
 }
+
+.errorMsg{
+	padding-top:5px;
+	color:red;
+}
+
+footer{
+	width: 100%;
+	padding:10px;
+	position: absolute;
+	bottom: 20px;
+}

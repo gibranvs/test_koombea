@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 15, 2024 at 11:44 PM
+-- Generation Time: Jun 17, 2024 at 06:04 AM
 -- Server version: 5.7.32
 -- PHP Version: 7.4.12
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `test_kooombea_db`
+-- Database: `test_koombea_db`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +30,8 @@ CREATE TABLE `pages` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   `url` varchar(80) NOT NULL,
-  `user_id` int(10) UNSIGNED NOT NULL
+  `user_id` int(10) UNSIGNED DEFAULT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -54,8 +55,7 @@ CREATE TABLE `page_links` (
 
 CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `email` varchar(80) NOT NULL,
+  `username` varchar(80) NOT NULL,
   `password` varchar(80) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

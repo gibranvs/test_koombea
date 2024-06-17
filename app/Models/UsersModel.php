@@ -20,12 +20,11 @@ class UsersModel extends Model {
     protected $allowedFields = ['id', 'username', 'password'];
 
     public function userAuth($email,$password){
-        $this->select('id')
-                ->where(['username'=>$email,'password'=>$password]);
-        $total_rows=$this->countAllResults();
+        $user=$this->select('*')
+                ->where(['username'=>$email,'password'=>$password])
+                ->get()->getResult();
 
-        if($total_rows > 0) {
-            $user=$this->get()->getResult();
+        if(count($user) > 0) {
             $user=$user[0];
             $data=[
                     "id"=>$user->id,

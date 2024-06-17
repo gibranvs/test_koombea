@@ -18,6 +18,7 @@ class Home extends BaseController{
                 ->where("user_id",$session->id);
         
         $data=[];
+        $data["username"]=$session->username;
         $data['pages']=$pages->paginate(10);
         $data['pager']=$this->pages->pager;
         return view('home.php',$data);

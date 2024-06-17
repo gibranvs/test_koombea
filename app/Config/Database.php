@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => 'root',
-        'database' => 'test_kooombea_db',
+        'database' => 'test_koombea_db',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

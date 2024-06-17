@@ -1,0 +1,73 @@
+CRITICAL - 2024-06-17 00:29:15 --> Undefined variable: username
+in APPPATH/Views/home.php on line 7.
+ 1 APPPATH/Views/home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: username', 'APPPATH/Views/home.php', 7, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/home.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('home.php', [], true)
+ 5 APPPATH/Controllers/Home.php(23): view('home.php', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 00:34:29 --> syntax error, unexpected 'get' (T_STRING)
+in APPPATH/Models/UsersModel.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/UsersModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsersModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsersModel')
+ 4 APPPATH/Libraries/AuthManager.php(11): spl_autoload_call('App\\Models\\UsersModel')
+ 5 APPPATH/Controllers/Login.php(23): App\Libraries\AuthManager::logIn('gtc3', '587dd21385b11e806bf390ec19e559a430e884a7')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->validate_user()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-17 00:34:41 --> Undefined property: stdClass::$username
+in APPPATH/Models/UsersModel.php on line 31.
+ 1 APPPATH/Models/UsersModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$username', 'APPPATH/Models/UsersModel.php', 31, [...])
+ 2 APPPATH/Libraries/AuthManager.php(13): App\Models\UsersModel->userAuth('gtc3', '587dd21385b11e806bf390ec19e559a430e884a7')
+ 3 APPPATH/Controllers/Login.php(23): App\Libraries\AuthManager::logIn('gtc3', '587dd21385b11e806bf390ec19e559a430e884a7')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Login->validate_user()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-17 01:02:48 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'test_kooombea_db' in /Applications/mamp/htdocs/test_koombea/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/mamp/htdocs/test_koombea/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'test_kooombea_d...', 3306, '', 0)
+#1 /Applications/mamp/htdocs/test_koombea/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/mamp/htdocs/test_koombea/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/mamp/htdocs/test_koombea/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/mamp/htdocs/test_koombea/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/mamp/htdocs/test_koombea/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/mamp/htdocs/test_koombea/app/Controllers/Home.php(22): CodeIgniter\BaseModel->paginate(10)
+#7 /Applications/mamp/htdocs/test_koombea/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#8 /Applications/mamp/htdocs/test_koombea/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /Applications/mamp/htdocs/test_koombea/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/mamp/htdocs/test_koombea/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'test_kooombea_db' in /Applications/mamp/htdocs/test_koombea/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/mamp/htdocs/test_koombea/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/mamp/htdocs/test_koombea/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/mamp/htdocs/test_koombea/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Applications/mamp/htdocs/test_koombea/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 /Applications/mamp/htdocs/test_koombea/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#5 /Applications/mamp/htdocs/test_koombea/app/Controllers/Home.php(22): CodeIgniter\BaseModel->paginate(10)
+#6 /Applications/mamp/htdocs/test_koombea/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /Applications/mamp/htdocs/test_koombea/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Applications/mamp/htdocs/test_koombea/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/test_koombea/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-17 01:02:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'test_kooombea_db'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `pages`
+WHERE `user_id` = :user_id:', [...], false)
+ 3 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH/Controllers/Home.php(22): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

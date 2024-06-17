@@ -18,9 +18,9 @@
 		<main>
 			<?php echo $this->renderSection('content'); ?>
 		</main>
-		
-		<footer>
-			BY Gibrán Vázquez
+
+		<footer class="text-end">
+			BY <a href="https://www.linkedin.com/in/gibr%C3%A1n-v%C3%A1zquez-49b476ba/" target="_blank">Gibrán Vázquez</a>
 		</footer>
 
 		<!-- Alert Modal -->
@@ -29,14 +29,14 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <h5 class="modal-title" id="alertModalTitle">Modal title</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
 		      <div class="modal-body" id="alertModalContent">
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
 		      </div>
 		    </div>
 		  </div>
@@ -45,5 +45,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="<?php echo base_url('public/assets/js/bootstrap.bundle.min.js'); ?>"></script>
+
+<script type="text/javascript">
+</script>
 	<?php echo $this->renderSection('scripts'); ?>
 </html>

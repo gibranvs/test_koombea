@@ -63,7 +63,7 @@ class Login extends Controller{
     public function logout()
     {
         AuthManager::logOut();
-        return redirect()->to(base_url()."/admin/login");
+        return redirect()->to(base_url("login"));
     }
 
 }

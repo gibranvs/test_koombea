@@ -40,6 +40,7 @@ $routes->get('/', 'Home::index',['filter' => 'authGuard']);
 $routes->get('/page/(:num)', 'Page::index/$1');
 $routes->post('/page/save', 'Page::save',['filter' => 'authGuard']);
 $routes->get('/login', 'Login::index');
+$routes->get('/logout', 'Login::logout');
 $routes->post('/login/validate_user', 'Login::validate_user');
 $routes->post('/login/register_user', 'Login::register_user');
 

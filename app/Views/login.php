@@ -12,7 +12,7 @@
 	</ul>
 	<div class="tab-content" id="loginTabContent">
 	  	<div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-	  		<div class="errorMsg">
+	  		<div class="errorMsg text-center">
 	  		<?php
 	  		if(isset($error)){
 	  			echo $error;

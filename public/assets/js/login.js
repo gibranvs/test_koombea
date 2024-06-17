@@ -1,3 +1,5 @@
+var alertModal = new bootstrap.Modal(document.getElementById('alertModal'));
+
 $(function(){
 	$("#regBtn").click(function(){
 		$.post(
@@ -10,9 +12,9 @@ $(function(){
 			function(resp) {
 				var res=$.parseJSON(resp);
 				if(res.status==1){
-					alert("You have been succesfully registered, you can Log in now.");
+					alertMsg("Success","You have been succesfully registered, you can Log in now.");
 				}else{
-					alert(res.data);
+					alertMsg("Error",res.data);
 				}
 
 			}
@@ -20,3 +22,9 @@ $(function(){
 
 	});
 });
+
+function alertMsg(title,txt){
+	$("#alertModalTitle").html(title);
+	$("#alertModalContent").html(txt);
+	alertModal.show();
+}

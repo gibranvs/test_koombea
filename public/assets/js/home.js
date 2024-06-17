@@ -1,5 +1,9 @@
+var alertModal = new bootstrap.Modal(document.getElementById('alertModal'));
+
 $(function(){
+
 	$("#scrapBtn").click(function(){
+		$(this).prop("disabled",true);
 		if(validateUrl($("#url").val())){
 			$.post(
 				'page/save', 
@@ -15,12 +19,14 @@ $(function(){
 						});
 					}else{
 						alertMsg("Not Saved",res.data);
+						$(this).prop("disabled",false);
 					}
 
 				}
 			);
 		}else{
 			alertMsg("Invalid URL","Please write a valid URL to get the links");
+			$(this).prop("disabled",false);
 		}
 
 	});
@@ -29,7 +35,7 @@ $(function(){
 function alertMsg(title,txt){
 	$("#alertModalTitle").html(title);
 	$("#alertModalContent").html(txt);
-	$("#alertModal").show();
+	alertModal.show();
 }
 
 function validateUrl(url){
