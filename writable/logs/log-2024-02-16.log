@@ -1,0 +1,199 @@
+CRITICAL - 2024-02-16 15:23:02 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Categorias.php(148): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/public/themes/gtheme/assets/img/categorias/c239f98796396b24b24c6b5e054fe373portada.jpg')
+ 3 APPPATH/Controllers/Admin/Categorias.php(63): App\Controllers\Admin\Categorias->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/public/themes/gtheme/assets/img/categorias/c239f98796396b24b24c6b5e054fe373portada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Categorias->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Categorias))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-16 15:35:15 --> mysqli_sql_exception: Unknown column 'activo' in 'where clause' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/app/Models/CategoriasModel.php(49): CodeIgniter\Database\BaseBuilder->getWhere('activo!=0')
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Admin/Slider.php(45): App\Models\CategoriasModel->frmGetCategorias()
+#6 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Admin\Slider->add()
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Slider))
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-16 15:35:15 --> Unknown column 'activo' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `categorias`
+WHERE `activo` !=0', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categorias`
+WHERE `activo` !=0')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categorias`
+WHERE `activo` !=0')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `activo` !=0', [], false)
+ 5 APPPATH/Models/CategoriasModel.php(49): CodeIgniter\Database\BaseBuilder->getWhere('activo!=0')
+ 6 APPPATH/Controllers/Admin/Slider.php(45): App\Models\CategoriasModel->frmGetCategorias()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Slider->add()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Slider))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 15:46:41 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Slider.php(229): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/pumas/assets/img/slider//sF1ONHoDPQQMB9aO_web.jpg')
+ 3 APPPATH/Controllers/Admin/Slider.php(71): App\Controllers\Admin\Slider->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/pumas/assets/img/slider//sF1ONHoDPQQMB9aO_web.jpg', 858, 800, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Slider->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Slider))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 15:48:55 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Slider.php(229): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/banners//SL4DFiEk9lYJJFp3_web.jpg')
+ 3 APPPATH/Controllers/Admin/Slider.php(71): App\Controllers\Admin\Slider->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/banners//SL4DFiEk9lYJJFp3_web.jpg', 858, 800, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Slider->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Slider))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 15:49:34 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Slider.php(229): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/banners//vrXjq7irzmmrDe1s_web.jpg')
+ 3 APPPATH/Controllers/Admin/Slider.php(71): App\Controllers\Admin\Slider->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/banners//vrXjq7irzmmrDe1s_web.jpg', 858, 800, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Slider->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Slider))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 15:51:52 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Slider.php(229): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/banners//7v3cBcVXbYzrcTjn_web.jpg')
+ 3 APPPATH/Controllers/Admin/Slider.php(71): App\Controllers\Admin\Slider->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/banners//7v3cBcVXbYzrcTjn_web.jpg', 858, 800, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Slider->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Slider))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 17:09:46 --> Call to undefined method App\Models\SliderModel::order_by
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Paginas.php(58): CodeIgniter\Model->__call('order_by', [...])
+ 2 APPPATH/Controllers/Paginas.php(30): App\Controllers\Paginas->setContenido([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('inicio')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-16 17:10:27 --> mysqli_sql_exception: Unknown column 'position' in 'order clause' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Paginas.php(58): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/app/Controllers/Paginas.php(30): App\Controllers\Paginas->setContenido(Array)
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Paginas->index('inicio')
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-16 17:10:27 --> Unknown column 'position' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `slider`
+WHERE `slider`.`estado` = 1
+ORDER BY `position` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `slider`
+WHERE `slider`.`estado` = 1
+ORDER BY `position` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `slider`
+WHERE `slider`.`estado` = 1
+ORDER BY `position` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `slider`
+WHERE `slider`.`estado` = :slider.estado:
+ORDER BY `position` ASC', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Paginas.php(58): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH/Controllers/Paginas.php(30): App\Controllers\Paginas->setContenido([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('inicio')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-16 17:11:50 --> mysqli_sql_exception: Unknown column 'position' in 'order clause' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Paginas.php(58): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/app/Controllers/Paginas.php(30): App\Controllers\Paginas->setContenido(Array)
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Paginas->index('inicio')
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-16 17:11:50 --> Unknown column 'position' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `slider`
+WHERE `slider`.`estado` = 1
+ORDER BY `position` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `slider`
+WHERE `slider`.`estado` = 1
+ORDER BY `position` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `slider`
+WHERE `slider`.`estado` = 1
+ORDER BY `position` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `slider`
+WHERE `slider`.`estado` = :slider.estado:
+ORDER BY `position` ASC', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Paginas.php(58): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH/Controllers/Paginas.php(30): App\Controllers\Paginas->setContenido([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('inicio')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 17:30:26 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Categorias.php on line 110.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Categorias->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Categorias))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 22:01:53 --> Undefined property: stdClass::$id_perfil
+in APPPATH/Views/admin/usuarios/edit.php on line 46.
+ 1 APPPATH/Views/admin/usuarios/edit.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_perfil', 'APPPATH/Views/admin/usuarios/edit.php', 46, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/usuarios/edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/usuarios/edit', [], true)
+ 5 APPPATH/Controllers/Admin/Usuarios.php(92): view('admin/usuarios/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Usuarios->edit('2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 22:17:26 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Noticias.php(224): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/pumas/assets/img/noticias//e6f19d9b898ffbb7bcb626ee760b2c2asocial.jpg')
+ 3 APPPATH/Controllers/Admin/Noticias.php(72): App\Controllers\Admin\Noticias->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/pumas/assets/img/noticias//e6f19d9b898ffbb7bcb626ee760b2c2asocial.jpg', 430, 300, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Noticias->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Noticias))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-16 22:18:37 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Noticias.php(223): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/public/themes/gtheme/assets/img/noticias//84dbaa62ae357b258cb925262356109esocial.jpg')
+ 3 APPPATH/Controllers/Admin/Noticias.php(71): App\Controllers\Admin\Noticias->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/public/themes/gtheme/assets/img/noticias//84dbaa62ae357b258cb925262356109esocial.jpg', 430, 300, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Noticias->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Noticias))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,12 @@
+CRITICAL - 2023-12-18 11:13:43 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/suplementos/layouts/index.php on line 115.
+ 1 APPPATH/Views/suplementos/layouts/index.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'sizeof(): Parameter must be an array or an object that implements Countable', 'APPPATH/Views/suplementos/layouts/index.php', 115, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('gstore/pagina_estatica', [], true)
+ 6 APPPATH/Controllers/Paginas.php(35): view('gstore/pagina_estatica', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('inicio')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

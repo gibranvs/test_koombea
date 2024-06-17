@@ -1,0 +1,143 @@
+CRITICAL - 2023-07-13 15:15:58 --> Class 'App\Models\Admin\NoticiasModel' not found
+in APPPATH/Controllers/Home.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Home->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:23:58 --> Class 'App\Models\Admin\NoticiasModel' not found
+in APPPATH/Controllers/Admin/Noticias.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Noticias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:25:23 --> Class 'App\Models\Admin\NoticiasModel' not found
+in APPPATH/Controllers/Admin/Noticias.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Noticias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:25:24 --> Class 'App\Models\Admin\NoticiasModel' not found
+in APPPATH/Controllers/Admin/Noticias.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Noticias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:25:24 --> Class 'App\Models\Admin\NoticiasModel' not found
+in APPPATH/Controllers/Admin/Noticias.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Noticias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:25:24 --> Class 'App\Models\Admin\NoticiasModel' not found
+in APPPATH/Controllers/Admin/Noticias.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Noticias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:27:36 --> Class 'App\Models\EstadisticasModel' not found
+in APPPATH/Controllers/Admin/Noticias.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Noticias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:29:40 --> Class 'App\Models\CategoriasModel' not found
+in APPPATH/Controllers/Admin/Noticias.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Noticias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:30:46 --> Class 'App\Models\CategoriasModel' not found
+in APPPATH/Controllers/Admin/Noticias.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Noticias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-13 15:31:14 --> mysqli_sql_exception: Table 'db_gman.categorias' doesn't exist in /Applications/mamp/htdocs/gman/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gman/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/mamp/htdocs/gman/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/mamp/htdocs/gman/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/mamp/htdocs/gman/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/mamp/htdocs/gman/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/mamp/htdocs/gman/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/mamp/htdocs/gman/app/Controllers/Admin/Noticias.php(37): CodeIgniter\BaseModel->paginate(15)
+#7 /Applications/mamp/htdocs/gman/system/CodeIgniter.php(927): App\Controllers\Admin\Noticias->index()
+#8 /Applications/mamp/htdocs/gman/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Noticias))
+#9 /Applications/mamp/htdocs/gman/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/mamp/htdocs/gman/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-13 15:31:14 --> mysqli_sql_exception: Table 'db_gman.categorias' doesn't exist in /Applications/mamp/htdocs/gman/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gman/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `articul...', 0)
+#1 /Applications/mamp/htdocs/gman/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `articul...')
+#2 /Applications/mamp/htdocs/gman/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `articul...')
+#3 /Applications/mamp/htdocs/gman/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `articul...', Array, false)
+#4 /Applications/mamp/htdocs/gman/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gman/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(15, 0)
+#6 /Applications/mamp/htdocs/gman/system/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(15, 0)
+#7 /Applications/mamp/htdocs/gman/app/Controllers/Admin/Noticias.php(37): CodeIgniter\BaseModel->paginate(15)
+#8 /Applications/mamp/htdocs/gman/system/CodeIgniter.php(927): App\Controllers\Admin\Noticias->index()
+#9 /Applications/mamp/htdocs/gman/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Noticias))
+#10 /Applications/mamp/htdocs/gman/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gman/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-13 15:31:14 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 224.
+ 1 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(15, 0)
+ 2 SYSTEMPATH/BaseModel.php(1110): CodeIgniter\BaseModel->findAll(15, 0)
+ 3 APPPATH/Controllers/Admin/Noticias.php(37): CodeIgniter\BaseModel->paginate(15)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Noticias->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Noticias))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:47:10 --> Class 'App\Models\Admin\Catalogos\CategoriasModel' not found
+in APPPATH/Controllers/Admin/Slider.php on line 30.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Slider->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:48:23 --> Invalid file: admin/galerias/add.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/galerias/add.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/galerias/add', [], true)
+ 3 APPPATH/Controllers/Admin/Galerias.php(39): view('admin/galerias/add', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Galerias->add()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galerias))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:51:57 --> Class 'App\Models\Admin\GaleriaVideosModel' not found
+in APPPATH/Controllers/Admin/Videos.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Videos->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:53:06 --> Class 'App\Models\Admin\PaginasModel' not found
+in APPPATH/Controllers/Admin/Paginas.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Paginas->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:54:12 --> Class 'App\Controllers\Admin\Admin\SeccionesModel' not found
+in APPPATH/Controllers/Admin/Paginas.php on line 88.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Paginas->edit('8')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Paginas))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:55:14 --> Class 'App\Controllers\Admin\Admin\SeccionesModel' not found
+in APPPATH/Controllers/Admin/Paginas.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Paginas->edit('8')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Paginas))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 15:55:35 --> Class 'App\Controllers\Admin\SeccionesModel' not found
+in APPPATH/Controllers/Admin/Paginas.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Paginas->edit('8')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Paginas))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 16:06:04 --> Class 'App\Models\Admin\SeccionesModel' not found
+in APPPATH/Controllers/Admin/Secciones.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Secciones->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,56 @@
+CRITICAL - 2023-12-08 00:29:02 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/productos/edit.php on line 142.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/edit', [], true)
+ 4 APPPATH/Controllers/Admin/Productos.php(124): view('admin/productos/edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->edit('7')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 00:31:18 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/productos/edit.php on line 145.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/edit', [], true)
+ 4 APPPATH/Controllers/Admin/Productos.php(124): view('admin/productos/edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->edit('7')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 00:32:21 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/productos/edit.php on line 146.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/edit', [], true)
+ 4 APPPATH/Controllers/Admin/Productos.php(124): view('admin/productos/edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->edit('7')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 00:33:59 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/productos/edit.php on line 146.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/edit', [], true)
+ 4 APPPATH/Controllers/Admin/Productos.php(124): view('admin/productos/edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->edit('7')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 00:34:36 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/productos/edit.php on line 146.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/edit', [], true)
+ 4 APPPATH/Controllers/Admin/Productos.php(124): view('admin/productos/edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->edit('7')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 21:16:57 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Opciones.php on line 107.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Opciones->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Opciones))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

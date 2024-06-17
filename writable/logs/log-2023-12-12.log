@@ -1,0 +1,252 @@
+CRITICAL - 2023-12-12 13:52:16 --> Invalid argument supplied for foreach()
+in APPPATH/Views/suplementos/detalle.php on line 51.
+ 1 APPPATH/Views/suplementos/detalle.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/suplementos/detalle.php', 51, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle.php', [], true)
+ 5 APPPATH/Controllers/Home.php(54): view('suplementos/detalle.php')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:48:09 --> Invalid argument supplied for foreach()
+in APPPATH/Views/admin/marcas/index.php on line 40.
+ 1 APPPATH/Views/admin/marcas/index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/admin/marcas/index.php', 40, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/marcas/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/marcas/index', [], true)
+ 5 APPPATH/Controllers/Admin/Marcas.php(33): view('admin/marcas/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Marcas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Marcas))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:51:00 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Marcas.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Marcas->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Marcas))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:51:11 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Marcas.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Marcas->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Marcas))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:51:27 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Marcas.php(147): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/public/themes/gtheme/assets/img/marcas/8fa81951fb350f7407a16905eeeb7520marca.jpg')
+ 3 APPPATH/Controllers/Admin/Marcas.php(62): App\Controllers\Admin\Marcas->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/public/themes/gtheme/assets/img/marcas/8fa81951fb350f7407a16905eeeb7520marca.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Marcas->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Marcas))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:24:52 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH/Controllers/Productos.php on line 51.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Productos.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Productos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Productos')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Productos')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Productos', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 15:25:12 --> mysqli_sql_exception: Unknown column 'categorias.url' in 'field list' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `product...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Productos.php(53): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 15:25:12 --> Call to a member function getResult() on bool
+in APPPATH/Controllers/Productos.php on line 53.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 15:26:39 --> mysqli_sql_exception: Unknown column 'categorias.url' in 'field list' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `product...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Productos.php(53): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 15:26:39 --> Call to a member function getResult() on bool
+in APPPATH/Controllers/Productos.php on line 53.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 15:27:04 --> mysqli_sql_exception: Unknown column 'categorias.url' in 'field list' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `product...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Productos.php(52): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 15:28:36 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in /Applications/mamp/htdocs/gstore/system/Helpers/url_helper.php on line 87
+in SYSTEMPATH/Helpers/url_helper.php on line 31.
+ 1 SYSTEMPATH/Helpers/url_helper.php(87): _get_uri(null, Object(Config\App))
+ 2 SYSTEMPATH/Helpers/url_helper.php(105): site_url(null, null, Object(Config\App))
+ 3 APPPATH/Views/suplementos/detalle.php(16): base_url(null)
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 7 APPPATH/Controllers/Productos.php(63): view('suplementos/detalle', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:29:36 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in /Applications/mamp/htdocs/gstore/system/Helpers/url_helper.php on line 87
+in SYSTEMPATH/Helpers/url_helper.php on line 31.
+ 1 SYSTEMPATH/Helpers/url_helper.php(87): _get_uri(null, Object(Config\App))
+ 2 SYSTEMPATH/Helpers/url_helper.php(105): site_url(null, null, Object(Config\App))
+ 3 APPPATH/Views/suplementos/detalle.php(16): base_url(null)
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 7 APPPATH/Controllers/Productos.php(63): view('suplementos/detalle', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:30:26 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in /Applications/mamp/htdocs/gstore/system/Helpers/url_helper.php on line 87
+in SYSTEMPATH/Helpers/url_helper.php on line 31.
+ 1 SYSTEMPATH/Helpers/url_helper.php(87): _get_uri(null, Object(Config\App))
+ 2 SYSTEMPATH/Helpers/url_helper.php(105): site_url(null, null, Object(Config\App))
+ 3 APPPATH/Views/suplementos/detalle.php(16): base_url(null)
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 7 APPPATH/Controllers/Productos.php(64): view('suplementos/detalle', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:31:18 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in /Applications/mamp/htdocs/gstore/system/Helpers/url_helper.php on line 87
+in SYSTEMPATH/Helpers/url_helper.php on line 31.
+ 1 SYSTEMPATH/Helpers/url_helper.php(87): _get_uri(null, Object(Config\App))
+ 2 SYSTEMPATH/Helpers/url_helper.php(105): site_url(null, null, Object(Config\App))
+ 3 APPPATH/Views/suplementos/detalle.php(43): base_url(null)
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 7 APPPATH/Controllers/Productos.php(64): view('suplementos/detalle', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:40:25 --> Invalid argument supplied for foreach()
+in APPPATH/Views/secciones/catalogo.php on line 5.
+ 1 APPPATH/Views/secciones/catalogo.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/secciones/catalogo.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/secciones/catalogo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('secciones/catalogo', [], true)
+ 5 APPPATH/Views/suplementos/catalogo.php(14): view('secciones/catalogo', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/catalogo.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/catalogo', [], true)
+ 9 APPPATH/Controllers/Productos.php(43): view('suplementos/catalogo', [...])
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->categoria('cat-2')
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 16:34:57 --> Call to a member function getPost() on null
+in APPPATH/Controllers/Carrito.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->api()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 16:35:59 --> Call to a member function getPost() on null
+in APPPATH/Controllers/Carrito.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->api()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 19:08:18 --> Call to a member function getNoticiasRecientes() on null
+in APPPATH/Controllers/Home.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 20:15:34 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Carrito.php on line 27.
+ 1 APPPATH/Controllers/Carrito.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Carrito.php', 27, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 20:16:55 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Carrito.php on line 28.
+ 1 APPPATH/Controllers/Carrito.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Carrito.php', 28, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 20:17:12 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Carrito.php on line 30.
+ 1 APPPATH/Controllers/Carrito.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Carrito.php', 30, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-12 20:32:59 --> mysqli_sql_exception: Unknown table 'op' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `op`.*, ...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `op`.*, ...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `op`.*, ...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `op`.*, ...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(35): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->index()
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-12 20:32:59 --> Call to a member function getResult() on bool
+in APPPATH/Controllers/Carrito.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 20:44:19 --> Creating default object from empty value
+in APPPATH/Controllers/Carrito.php on line 37.
+ 1 APPPATH/Controllers/Carrito.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH/Controllers/Carrito.php', 37, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 21:02:12 --> array_push() expects parameter 1 to be array, null given
+in APPPATH/Controllers/Carrito.php on line 37.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH/Controllers/Carrito.php', 37, [...])
+ 2 APPPATH/Controllers/Carrito.php(37): array_push(null, Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 21:02:33 --> array_push() expects parameter 1 to be array, null given
+in APPPATH/Controllers/Carrito.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH/Controllers/Carrito.php', 38, [...])
+ 2 APPPATH/Controllers/Carrito.php(38): array_push(null, Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

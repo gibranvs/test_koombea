@@ -1,0 +1,18 @@
+CRITICAL - 2024-04-19 14:03:20 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Productos.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:07:50 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Productos.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-19 14:20:46 --> Undefined class constant 'DIRC'
+in APPPATH/Controllers/Admin/Productos.php on line 115.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

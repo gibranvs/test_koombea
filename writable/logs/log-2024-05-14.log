@@ -1,0 +1,11 @@
+CRITICAL - 2024-05-14 22:23:34 --> Undefined index: portada
+in APPPATH/Views/admin/etiquetas/edit.php on line 44.
+ 1 APPPATH/Views/admin/etiquetas/edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: portada', 'APPPATH/Views/admin/etiquetas/edit.php', 44, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/etiquetas/edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/etiquetas/edit', [], true)
+ 5 APPPATH/Controllers/Admin/Etiquetas.php(90): view('admin/etiquetas/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Etiquetas->edit('2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Etiquetas))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

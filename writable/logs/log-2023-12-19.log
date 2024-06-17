@@ -1,0 +1,214 @@
+CRITICAL - 2023-12-19 12:34:08 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/ImagenesProducto.php on line 42.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\ImagenesProducto->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ImagenesProducto))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 12:36:59 --> Call to undefined method App\Controllers\Admin\ImagenesProducto::saveImage()
+in APPPATH/Controllers/Admin/ImagenesProducto.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\ImagenesProducto->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ImagenesProducto))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 12:38:32 --> Call to undefined method App\Controllers\Admin\ImagenesProducto::saveImage()
+in APPPATH/Controllers/Admin/ImagenesProducto.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\ImagenesProducto->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ImagenesProducto))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:15:53 --> Cannot use [] for reading
+in APPPATH/Controllers/Admin/Productos.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 13:17:18 --> Cannot use [] for reading
+in APPPATH/Controllers/Admin/Productos.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 13:17:21 --> Cannot use [] for reading
+in APPPATH/Controllers/Admin/Productos.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 13:17:49 --> Cannot use [] for reading
+in APPPATH/Controllers/Admin/Productos.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 13:18:09 --> session_start(): A session had already been started - ignoring
+in APPPATH/Controllers/BaseController.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): A session had already been started - ignoring', 'APPPATH/Controllers/BaseController.php', 64, [...])
+ 2 APPPATH/Controllers/BaseController.php(64): session_start()
+ 3 SYSTEMPATH/CodeIgniter.php(890): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:21:30 --> Undefined index: destacada
+in APPPATH/Views/admin/productos/index.php on line 50.
+ 1 APPPATH/Views/admin/productos/index.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: destacada', 'APPPATH/Views/admin/productos/index.php', 50, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/productos/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/index', [], true)
+ 5 APPPATH/Controllers/Admin/Productos.php(50): view('admin/productos/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:25:35 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 63.
+ 1 APPPATH/Views/suplementos/layouts/index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 63, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/catalogo', [], true)
+ 6 APPPATH/Controllers/Productos.php(52): view('suplementos/catalogo', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->categoria('cat-2')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:25:52 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 63.
+ 1 APPPATH/Views/suplementos/layouts/index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 63, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/catalogo', [], true)
+ 6 APPPATH/Controllers/Productos.php(52): view('suplementos/catalogo', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->categoria('cat-chida')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:31:47 --> Undefined index: productos
+in APPPATH/Controllers/Carrito.php on line 30.
+ 1 APPPATH/Controllers/Carrito.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: productos', 'APPPATH/Controllers/Carrito.php', 30, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:31:48 --> Undefined index: productos
+in APPPATH/Controllers/Carrito.php on line 30.
+ 1 APPPATH/Controllers/Carrito.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: productos', 'APPPATH/Controllers/Carrito.php', 30, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:33:24 --> The route for "http://localhost:8888/gstore" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8888/gstore')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Carrito.php(35): redirect('http://localhost:8888/gstore')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:34:16 --> The route for "http://localhost:8888/gstore/inicio" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8888/gstore/inicio')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Carrito.php(35): redirect('http://localhost:8888/gstore/inicio')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 13:58:52 --> Undefined variable: imagenes
+in APPPATH/Views/suplementos/detalle.php on line 30.
+ 1 APPPATH/Views/suplementos/detalle.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: imagenes', 'APPPATH/Views/suplementos/detalle.php', 30, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 5 APPPATH/Controllers/Productos.php(77): view('suplementos/detalle', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-chido-5')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 14:22:20 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `ventas`...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Factura.php(24): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Factura->index('2')
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factura))
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 14:22:20 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `ventas`.*, `cl`.`nombre`, `cl`.`apellidos`, `cl`.`telefono`
+FROM `ventas`
+INNER JOIN `clientes` `cl` ON `vt`.`id_cliente`=`cl`.`id`
+WHERE `id` = \'2\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `cl`.`nombre`, `cl`.`apellidos`, `cl`.`telefono`
+FROM `ventas`
+INNER JOIN `clientes` `cl` ON `vt`.`id_cliente`=`cl`.`id`
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `cl`.`nombre`, `cl`.`apellidos`, `cl`.`telefono`
+FROM `ventas`
+INNER JOIN `clientes` `cl` ON `vt`.`id_cliente`=`cl`.`id`
+WHERE `id` = \'2\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `cl`.`nombre`, `cl`.`apellidos`, `cl`.`telefono`
+FROM `ventas`
+INNER JOIN `clientes` `cl` ON `vt`.`id_cliente`=`cl`.`id`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Factura.php(24): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Factura->index('2')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factura))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-19 14:22:35 --> mysqli_sql_exception: Unknown column 'vt.id_cliente' in 'on clause' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `ventas`...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Factura.php(24): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Factura->index('2')
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factura))
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-19 14:22:35 --> Unknown column 'vt.id_cliente' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `ventas`.*, `cl`.`nombre`, `cl`.`apellidos`, `cl`.`telefono`
+FROM `ventas`
+INNER JOIN `clientes` `cl` ON `vt`.`id_cliente`=`cl`.`id`
+WHERE `ventas`.`id` = \'2\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `cl`.`nombre`, `cl`.`apellidos`, `cl`.`telefono`
+FROM `ventas`
+INNER JOIN `clientes` `cl` ON `vt`.`id_cliente`=`cl`.`id`
+WHERE `ventas`.`id` = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `cl`.`nombre`, `cl`.`apellidos`, `cl`.`telefono`
+FROM `ventas`
+INNER JOIN `clientes` `cl` ON `vt`.`id_cliente`=`cl`.`id`
+WHERE `ventas`.`id` = \'2\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `cl`.`nombre`, `cl`.`apellidos`, `cl`.`telefono`
+FROM `ventas`
+INNER JOIN `clientes` `cl` ON `vt`.`id_cliente`=`cl`.`id`
+WHERE `ventas`.`id` = :ventas.id:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Factura.php(24): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Factura->index('2')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factura))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 14:22:49 --> Undefined property: stdClass::$id_opcion
+in APPPATH/Controllers/Factura.php on line 34.
+ 1 APPPATH/Controllers/Factura.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_opcion', 'APPPATH/Controllers/Factura.php', 34, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Factura->index('2')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factura))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 14:23:22 --> Undefined variable: value
+in APPPATH/Controllers/Factura.php on line 37.
+ 1 APPPATH/Controllers/Factura.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'APPPATH/Controllers/Factura.php', 37, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Factura->index('2')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factura))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-19 14:26:04 --> syntax error, unexpected '$venta' (T_VARIABLE)
+in APPPATH/Controllers/Factura.php on line 70.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Factura.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Factura')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Factura')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Factura')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Factura', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,35 @@
+CRITICAL - 2024-05-07 01:57:33 --> Undefined variable: cartTotal
+in APPPATH/Controllers/Carrito.php on line 205.
+ 1 APPPATH/Controllers/Carrito.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cartTotal', 'APPPATH/Controllers/Carrito.php', 205, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-07 01:59:09 --> Undefined variable: cartTotal
+in APPPATH/Controllers/Carrito.php on line 205.
+ 1 APPPATH/Controllers/Carrito.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cartTotal', 'APPPATH/Controllers/Carrito.php', 205, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-07 02:00:30 --> Undefined variable: payment_method_id
+in APPPATH/Controllers/Carrito.php on line 208.
+ 1 APPPATH/Controllers/Carrito.php(208): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: payment_method_id', 'APPPATH/Controllers/Carrito.php', 208, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-07 02:02:05 --> Undefined variable: payment_method
+in APPPATH/Controllers/Carrito.php on line 208.
+ 1 APPPATH/Controllers/Carrito.php(208): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: payment_method', 'APPPATH/Controllers/Carrito.php', 208, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-07 02:09:21 --> Undefined variable: c_email
+in APPPATH/Controllers/Carrito.php on line 212.
+ 1 APPPATH/Controllers/Carrito.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: c_email', 'APPPATH/Controllers/Carrito.php', 212, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

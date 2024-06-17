@@ -1,0 +1,114 @@
+ERROR - 2023-12-20 03:10:25 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_gman`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categorias_productos` (`id`)) in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ca...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ca...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ca...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ca...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 /Applications/mamp/htdocs/gstore/app/Controllers/Admin/CategoriasProductos.php(155): CodeIgniter\BaseModel->delete(Array)
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->delete('2')
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-20 03:10:25 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_gman`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categorias_productos` (`id`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `categorias_productos`
+WHERE `id` IN (\'2\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `categorias_productos`
+WHERE `id` IN (\'2\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `categorias_productos`
+WHERE `id` IN (\'2\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `categorias_productos`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Admin/CategoriasProductos.php(155): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->delete('2')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 03:18:51 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Paginas.php(178): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/pumas/assets/img/paginas//856cff52f0cbaf48031fcb7f45bd5c39portada.jpg')
+ 3 APPPATH/Controllers/Admin/Paginas.php(64): App\Controllers\Admin\Paginas->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/pumas/assets/img/paginas//856cff52f0cbaf48031fcb7f45bd5c39portada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Paginas->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Paginas))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 03:19:00 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Paginas.php(178): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/pumas/assets/img/paginas//97aa4bc5dfd2818bc827125282769d02portada.jpg')
+ 3 APPPATH/Controllers/Admin/Paginas.php(64): App\Controllers\Admin\Paginas->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/pumas/assets/img/paginas//97aa4bc5dfd2818bc827125282769d02portada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Paginas->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Paginas))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 03:19:59 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Paginas.php(178): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/paginas//fd2567c325ccc139565772bc0df3f6bdportada.jpg')
+ 3 APPPATH/Controllers/Admin/Paginas.php(64): App\Controllers\Admin\Paginas->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/paginas//fd2567c325ccc139565772bc0df3f6bdportada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Paginas->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Paginas))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 03:20:50 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/Paginas.php(178): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/paginas//f541c16bc11a1ee3e54432e5d11948ddportada.jpg')
+ 3 APPPATH/Controllers/Admin/Paginas.php(64): App\Controllers\Admin\Paginas->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/paginas//f541c16bc11a1ee3e54432e5d11948ddportada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Paginas->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Paginas))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 13:43:08 --> Undefined variable: salt
+in APPPATH/Controllers/Admin/Opciones.php on line 109.
+ 1 APPPATH/Controllers/Admin/Opciones.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: salt', 'APPPATH/Controllers/Admin/Opciones.php', 109, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Opciones->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Opciones))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 13:43:20 --> Undefined variable: salt
+in APPPATH/Controllers/Admin/Opciones.php on line 109.
+ 1 APPPATH/Controllers/Admin/Opciones.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: salt', 'APPPATH/Controllers/Admin/Opciones.php', 109, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Opciones->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Opciones))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 14:04:08 --> Undefined variable: prod
+in APPPATH/Views/admin/opciones/edit.php on line 30.
+ 1 APPPATH/Views/admin/opciones/edit.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: prod', 'APPPATH/Views/admin/opciones/edit.php', 30, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/opciones/edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/opciones/edit', [], true)
+ 5 APPPATH/Controllers/Admin/Opciones.php(92): view('admin/opciones/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Opciones->edit('4')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Opciones))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 14:04:50 --> Undefined variable: prod
+in APPPATH/Views/admin/opciones/edit.php on line 32.
+ 1 APPPATH/Views/admin/opciones/edit.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: prod', 'APPPATH/Views/admin/opciones/edit.php', 32, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/opciones/edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/opciones/edit', [], true)
+ 5 APPPATH/Controllers/Admin/Opciones.php(92): view('admin/opciones/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Opciones->edit('4')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Opciones))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 14:10:37 --> Undefined variable: pagina
+in APPPATH/Views/admin/clientes/edit.php on line 288.
+ 1 APPPATH/Views/admin/clientes/edit.php(288): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pagina', 'APPPATH/Views/admin/clientes/edit.php', 288, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/clientes/edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/clientes/edit', [], true)
+ 5 APPPATH/Controllers/Admin/Clientes.php(72): view('admin/clientes/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Clientes->edit('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Clientes))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

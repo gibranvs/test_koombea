@@ -1,0 +1,95 @@
+CRITICAL - 2024-02-19 13:58:10 --> Undefined variable: perfiles
+in APPPATH/Views/admin/usuarios/add.php on line 42.
+ 1 APPPATH/Views/admin/usuarios/add.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: perfiles', 'APPPATH/Views/admin/usuarios/add.php', 42, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/usuarios/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/usuarios/add', [], true)
+ 5 APPPATH/Controllers/Admin/Usuarios.php(37): view('admin/usuarios/add')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Usuarios->add()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 14:14:40 --> Undefined variable: marcas
+in APPPATH/Views/admin/productos/add.php on line 46.
+ 1 APPPATH/Views/admin/productos/add.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas', 'APPPATH/Views/admin/productos/add.php', 46, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/productos/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/add', [], true)
+ 5 APPPATH/Controllers/Admin/Productos.php(61): view('admin/productos/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->add()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 16:29:12 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/slider/index.php on line 44.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/slider/index', [], true)
+ 4 APPPATH/Controllers/Admin/Slider.php(39): view('admin/slider/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Slider->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Slider))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 20:04:02 --> Call to a member function paginate() on array
+in APPPATH/Controllers/Admin/Productos.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 20:04:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH/Controllers/Admin/Productos.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-19 20:13:07 --> mysqli_sql_exception: Unknown column 'id_marca' in 'on clause' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 /Applications/mamp/htdocs/gstore/app/Controllers/Admin/Productos.php(47): CodeIgniter\BaseModel->paginate(15)
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-19 20:13:07 --> Unknown column 'id_marca' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `productos`
+JOIN `marcas` ON `marcas`.`id`=`id_marca`
+JOIN `categorias` ON `categorias`.`id`=`id_categoria`
+WHERE `productos`.`nombre` LIKE \'%h%\' ESCAPE \'!\'
+OR  `categorias`.`nombre` LIKE \'%h%\' ESCAPE \'!\'
+OR  `marcas`.`nombre` LIKE \'%h%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `productos`
+JOIN `marcas` ON `marcas`.`id`=`id_marca`
+JOIN `categorias` ON `categorias`.`id`=`id_categoria`
+WHERE `productos`.`nombre` LIKE \'%h%\' ESCAPE \'!\'
+OR  `categorias`.`nombre` LIKE \'%h%\' ESCAPE \'!\'
+OR  `marcas`.`nombre` LIKE \'%h%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `productos`
+JOIN `marcas` ON `marcas`.`id`=`id_marca`
+JOIN `categorias` ON `categorias`.`id`=`id_categoria`
+WHERE `productos`.`nombre` LIKE \'%h%\' ESCAPE \'!\'
+OR  `categorias`.`nombre` LIKE \'%h%\' ESCAPE \'!\'
+OR  `marcas`.`nombre` LIKE \'%h%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `productos`
+JOIN `marcas` ON `marcas`.`id`=`id_marca`
+JOIN `categorias` ON `categorias`.`id`=`id_categoria`
+WHERE `productos`.`nombre` LIKE :productos.nombre: ESCAPE \'!\'
+OR  `categorias`.`nombre` LIKE :categorias.nombre: ESCAPE \'!\'
+OR  `marcas`.`nombre` LIKE :marcas.nombre: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH/BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH/Controllers/Admin/Productos.php(47): CodeIgniter\BaseModel->paginate(15)
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

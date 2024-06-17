@@ -1,0 +1,17 @@
+CRITICAL - 2024-02-15 21:13:14 --> Undefined variable: categorias
+in APPPATH/Views/admin/categorias/index.php on line 40.
+ 1 APPPATH/Views/admin/categorias/index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: categorias', 'APPPATH/Views/admin/categorias/index.php', 40, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/categorias/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/categorias/index', [], true)
+ 5 APPPATH/Controllers/Admin/Categorias.php(33): view('admin/categorias/index', [])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Categorias->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Categorias))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 21:14:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get_last_query()
+in APPPATH/Controllers/Admin/Categorias.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Categorias->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Categorias))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

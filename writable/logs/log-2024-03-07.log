@@ -1,0 +1,31 @@
+CRITICAL - 2024-03-07 16:07:24 --> syntax error, unexpected ',', expecting ')'
+in APPPATH/Views/admin/secciones/add.php on line 87.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/secciones/add', [], true)
+ 3 APPPATH/Controllers/Admin/Secciones.php(79): view('admin/secciones/add', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Secciones->add('1')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Secciones))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-07 16:08:01 --> Undefined variable: categorias_ar
+in APPPATH/Views/admin/secciones/add.php on line 87.
+ 1 APPPATH/Views/admin/secciones/add.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: categorias_ar', 'APPPATH/Views/admin/secciones/add.php', 87, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/secciones/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/secciones/add', [], true)
+ 5 APPPATH/Controllers/Admin/Secciones.php(79): view('admin/secciones/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Secciones->add('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Secciones))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-07 18:48:04 --> Undefined index: 
+in APPPATH/Views/admin/productos/index.php on line 59.
+ 1 APPPATH/Views/admin/productos/index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ', 'APPPATH/Views/admin/productos/index.php', 59, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/productos/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/index', [], true)
+ 5 APPPATH/Controllers/Admin/Productos.php(68): view('admin/productos/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

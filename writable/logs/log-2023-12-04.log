@@ -1,0 +1,154 @@
+CRITICAL - 2023-12-04 15:28:48 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/CategoriasProductos.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 15:31:48 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/CategoriasProductos.php(165): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/categorias_productos//f85e93ae5508e1aec45ab6eca235bda1portada.jpg')
+ 3 APPPATH/Controllers/Admin/CategoriasProductos.php(61): App\Controllers\Admin\CategoriasProductos->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/categorias_productos//f85e93ae5508e1aec45ab6eca235bda1portada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 15:33:13 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/CategoriasProductos.php(165): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/categorias_productos/9142d74a8f1c03b53b70ce0b64542509portada.jpg')
+ 3 APPPATH/Controllers/Admin/CategoriasProductos.php(61): App\Controllers\Admin\CategoriasProductos->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/categorias_productos/9142d74a8f1c03b53b70ce0b64542509portada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 15:34:43 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/CategoriasProductos.php(165): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/categorias_productos/385c0f15f6ac3a0c9b4f9f085c3b401fportada.jpg')
+ 3 APPPATH/Controllers/Admin/CategoriasProductos.php(61): App\Controllers\Admin\CategoriasProductos->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/categorias_productos/385c0f15f6ac3a0c9b4f9f085c3b401fportada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 15:35:46 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/CategoriasProductos.php(165): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/categorias_productos/59554f49baf73d97b76d4e67e4a41ea8portada.jpg')
+ 3 APPPATH/Controllers/Admin/CategoriasProductos.php(61): App\Controllers\Admin\CategoriasProductos->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/categorias_productos/59554f49baf73d97b76d4e67e4a41ea8portada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 15:37:09 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/CategoriasProductos.php(165): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/categorias_productos/1725bc44b52cccb3f189075b4ca44302portada.jpg')
+ 3 APPPATH/Controllers/Admin/CategoriasProductos.php(61): App\Controllers\Admin\CategoriasProductos->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/categorias_productos/1725bc44b52cccb3f189075b4ca44302portada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 15:59:58 --> syntax error, unexpected 'define' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Admin/CategoriasProductos.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Admin/CategoriasProductos.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\CategoriasProductos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\CategoriasProductos')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin\\CategoriasProductos')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin\\CategoriasProductos', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 16:03:07 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH/Controllers/Admin/CategoriasProductos.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-04 16:03:38 --> syntax error, unexpected 'define' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Admin/CategoriasProductos.php on line 13.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Admin/CategoriasProductos.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\CategoriasProductos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\CategoriasProductos')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin\\CategoriasProductos')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin\\CategoriasProductos', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 16:04:29 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/CategoriasProductos.php(170): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/themes/gtheme/assets/img/categorias_productos/993ed6abbfeda77a5f573c9958d5a6ecportada.jpg')
+ 3 APPPATH/Controllers/Admin/CategoriasProductos.php(66): App\Controllers\Admin\CategoriasProductos->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/themes/gtheme/assets/img/categorias_productos/993ed6abbfeda77a5f573c9958d5a6ecportada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 16:14:57 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH/Images/Handlers/GDHandler.php on line 251.
+ 1 SYSTEMPATH/Images/Handlers/GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH/Controllers/Admin/CategoriasProductos.php(170): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH/writable/themes/gtheme/assets/img/categorias_productos/02b5f065e1a030691902e2e5c947f5a6portada.jpg')
+ 3 APPPATH/Controllers/Admin/CategoriasProductos.php(66): App\Controllers\Admin\CategoriasProductos->saveImage(Object(CodeIgniter\HTTP\Files\UploadedFile), 'FCPATH/writable/themes/gtheme/assets/img/categorias_productos/02b5f065e1a030691902e2e5c947f5a6portada.jpg', 1920, 700, 2)
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 16:19:22 --> Use of undefined constant DIRPATH - assumed 'DIRPATH' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/Admin/CategoriasProductos.php on line 45.
+ 1 APPPATH/Controllers/Admin/CategoriasProductos.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant DIRPATH - assumed \'DIRPATH\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/Admin/CategoriasProductos.php', 45, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 16:21:25 --> mysqli_sql_exception: Column 'nombre' cannot be null in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ca...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Admin/CategoriasProductos.php(70): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->save()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-04 16:24:45 --> Class 'App\Controllers\Admin\SeccionesModel' not found
+in APPPATH/Controllers/Admin/CategoriasProductos.php on line 78.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->edit('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 16:24:57 --> Class 'App\Controllers\Admin\SeccionesModel' not found
+in APPPATH/Controllers/Admin/CategoriasProductos.php on line 78.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\CategoriasProductos->edit('1')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoriasProductos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 17:14:08 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Helpers/form_helper.php on line 331.
+ 1 APPPATH/Views/admin/productos/add.php(36): form_dropdown('id_categoria', [...], [...], ' class=form-select')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/productos/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/add', [], true)
+ 5 APPPATH/Controllers/Admin/Productos.php(44): view('admin/productos/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->add()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 17:17:51 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in SYSTEMPATH/Helpers/form_helper.php on line 331.
+ 1 APPPATH/Views/admin/productos/add.php(36): form_dropdown('id_categoria', [...], [...], ' class=form-select')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/productos/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/add', [], true)
+ 5 APPPATH/Controllers/Admin/Productos.php(44): view('admin/productos/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->add()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 21:02:42 --> Call to a member function get() on null
+in APPPATH/Controllers/Admin/Productos.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

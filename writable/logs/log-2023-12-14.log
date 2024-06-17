@@ -1,0 +1,233 @@
+CRITICAL - 2023-12-14 13:27:12 --> Creating default object from empty value
+in APPPATH/Controllers/Carrito.php on line 277.
+ 1 APPPATH/Controllers/Carrito.php(277): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH/Controllers/Carrito.php', 277, [...])
+ 2 APPPATH/Controllers/Carrito.php(31): App\Controllers\Carrito->cartToArray([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 13:27:14 --> Creating default object from empty value
+in APPPATH/Controllers/Carrito.php on line 277.
+ 1 APPPATH/Controllers/Carrito.php(277): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH/Controllers/Carrito.php', 277, [...])
+ 2 APPPATH/Controllers/Carrito.php(31): App\Controllers\Carrito->cartToArray([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 13:28:10 --> Creating default object from empty value
+in APPPATH/Controllers/Carrito.php on line 277.
+ 1 APPPATH/Controllers/Carrito.php(277): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH/Controllers/Carrito.php', 277, [...])
+ 2 APPPATH/Controllers/Carrito.php(31): App\Controllers\Carrito->cartToArray([...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 20:40:44 --> Call to a member function getResult() on null
+in APPPATH/Controllers/Carrito.php on line 117.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 20:41:12 --> There is no data to insert.
+in SYSTEMPATH/BaseModel.php on line 1598.
+ 1 SYSTEMPATH/BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH/BaseModel.php(709): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH/Controllers/Carrito.php(120): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-14 20:42:55 --> mysqli_sql_exception: Column 'subtotal' cannot be null in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ve...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(138): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-12-14 20:42:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_gman`.`productos_venta`, CONSTRAINT `productos_venta_ibfk_2` FOREIGN KEY (`id_venta`) REFERENCES `ventas` (`id`)) in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(150): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-12-14 20:42:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_gman`.`productos_venta`, CONSTRAINT `productos_venta_ibfk_2` FOREIGN KEY (`id_venta`) REFERENCES `ventas` (`id`)) in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(150): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-12-14 20:42:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_gman`.`productos_venta`, CONSTRAINT `productos_venta_ibfk_2` FOREIGN KEY (`id_venta`) REFERENCES `ventas` (`id`)) in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(150): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-12-14 20:46:06 --> mysqli_sql_exception: Column 'subtotal' cannot be null in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ve...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(140): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-12-14 20:46:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_gman`.`productos_venta`, CONSTRAINT `productos_venta_ibfk_2` FOREIGN KEY (`id_venta`) REFERENCES `ventas` (`id`)) in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(155): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-12-14 20:46:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_gman`.`productos_venta`, CONSTRAINT `productos_venta_ibfk_2` FOREIGN KEY (`id_venta`) REFERENCES `ventas` (`id`)) in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(155): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-12-14 20:46:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_gman`.`productos_venta`, CONSTRAINT `productos_venta_ibfk_2` FOREIGN KEY (`id_venta`) REFERENCES `ventas` (`id`)) in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/mamp/htdocs/gstore/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/mamp/htdocs/gstore/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/mamp/htdocs/gstore/app/Controllers/Carrito.php(155): CodeIgniter\Model->insert(Array)
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+#9 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+#10 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-14 21:25:55 --> Call to a member function select() on null
+in APPPATH/Controllers/Admin/Ventas.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Ventas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ventas))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 21:26:33 --> Call to undefined function App\Controllers\Admin\paginate()
+in APPPATH/Controllers/Admin/Ventas.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Ventas->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Ventas))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 21:55:21 --> Call to undefined method App\Controllers\Carrito::setQty()
+in APPPATH/Controllers/Carrito.php on line 54.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->api()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 22:41:30 --> Call to a member function links() on null
+in APPPATH/Views/admin/clientes/index.php on line 50.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/clientes/index', [], true)
+ 4 APPPATH/Controllers/Admin/Clientes.php(25): view('admin/clientes/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Clientes->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Clientes))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 22:42:02 --> Invalid argument supplied for foreach()
+in APPPATH/Views/admin/clientes/edit.php on line 117.
+ 1 APPPATH/Views/admin/clientes/edit.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/admin/clientes/edit.php', 117, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/clientes/edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/clientes/edit', [], true)
+ 5 APPPATH/Controllers/Admin/Clientes.php(72): view('admin/clientes/edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Clientes->edit('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Clientes))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 22:50:42 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/clientes/edit.php on line 109.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/clientes/edit', [], true)
+ 4 APPPATH/Controllers/Admin/Clientes.php(72): view('admin/clientes/edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Clientes->edit('1')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Clientes))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 22:58:53 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/suplementos/layouts/index.php on line 115.
+ 1 APPPATH/Views/suplementos/layouts/index.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'sizeof(): Parameter must be an array or an object that implements Countable', 'APPPATH/Views/suplementos/layouts/index.php', 115, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('gstore/pagina_estatica', [], true)
+ 6 APPPATH/Controllers/Paginas.php(35): view('gstore/pagina_estatica', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('inicio')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 23:00:01 --> sizeof(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/suplementos/layouts/index.php on line 115.
+ 1 APPPATH/Views/suplementos/layouts/index.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'sizeof(): Parameter must be an array or an object that implements Countable', 'APPPATH/Views/suplementos/layouts/index.php', 115, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 6 APPPATH/Controllers/Productos.php(71): view('suplementos/detalle', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

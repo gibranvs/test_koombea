@@ -1,0 +1,270 @@
+CRITICAL - 2024-05-15 01:26:54 --> Undefined property: App\Controllers\Productos::$etiquetas
+in APPPATH/Controllers/Productos.php on line 60.
+ 1 APPPATH/Controllers/Productos.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Productos::$etiquetas', 'APPPATH/Controllers/Productos.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->etiquetas('navidad')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:27:53 --> Class 'App\Controllers\EtiquetasModel' not found
+in APPPATH/Controllers/Productos.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Productos->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:29:34 --> Class 'App\Controllers\EtiquetasModel' not found
+in APPPATH/Controllers/Productos.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Productos->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:30:38 --> Class 'App\Controllers\EtiquetasModel' not found
+in APPPATH/Controllers/Productos.php on line 22.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Productos->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-15 01:31:42 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/mamp/htdocs/gstore/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/mamp/htdocs/gstore/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/mamp/htdocs/gstore/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/mamp/htdocs/gstore/system/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/mamp/htdocs/gstore/app/Controllers/Productos.php(62): CodeIgniter\Model->__call('get', Array)
+#6 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(927): App\Controllers\Productos->etiquetas('navidad')
+#7 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 /Applications/mamp/htdocs/gstore/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/mamp/htdocs/gstore/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-15 01:31:42 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `etiquetas`
+WHERE `url` = \'navidad\'
+AND `estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `etiquetas`
+WHERE `url` = \'navidad\'
+AND `estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `etiquetas`
+WHERE `url` = \'navidad\'
+AND `estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `etiquetas`
+WHERE `url` = :url:
+AND `estado` = :estado:', [...], false)
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Productos.php(62): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->etiquetas('navidad')
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:46:57 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH/Controllers/Productos.php on line 106.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Productos.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Productos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Productos')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Productos')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Productos', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:47:42 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:49:03 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:52:08 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:52:11 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:53:44 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:53:53 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:54:18 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:55:33 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:55:36 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:56:09 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:56:29 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:56:46 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:56:49 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:57:01 --> Undefined variable: marcas_menu
+in APPPATH/Views/suplementos/layouts/index.php on line 67.
+ 1 APPPATH/Views/suplementos/layouts/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: marcas_menu', 'APPPATH/Views/suplementos/layouts/index.php', 67, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/layouts/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('suplementos/layouts/index', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/busqueda.php', [], true)
+ 6 APPPATH/Controllers/Home.php(37): view('suplementos/busqueda.php')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->busqueda()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 01:58:54 --> Trying to get property 'url' of non-object
+in APPPATH/Views/secciones/catalogo.php on line 9.
+ 1 APPPATH/Views/secciones/catalogo.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'url\' of non-object', 'APPPATH/Views/secciones/catalogo.php', 9, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/secciones/catalogo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('secciones/catalogo', [], true)
+ 5 APPPATH/Views/suplementos/catalogo.php(14): view('secciones/catalogo', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/catalogo.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/catalogo', [], true)
+ 9 APPPATH/Controllers/Productos.php(105): view('suplementos/catalogo', [...])
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->busqueda()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 02:00:31 --> Trying to get property 'url' of non-object
+in APPPATH/Views/secciones/catalogo.php on line 9.
+ 1 APPPATH/Views/secciones/catalogo.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'url\' of non-object', 'APPPATH/Views/secciones/catalogo.php', 9, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/secciones/catalogo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('secciones/catalogo', [], true)
+ 5 APPPATH/Views/suplementos/catalogo.php(14): view('secciones/catalogo', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/catalogo.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/catalogo', [], true)
+ 9 APPPATH/Controllers/Productos.php(106): view('suplementos/catalogo', [...])
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->busqueda()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

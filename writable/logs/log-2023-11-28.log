@@ -1,0 +1,31 @@
+CRITICAL - 2023-11-28 22:19:42 --> Undefined class constant 'self::WS'
+in SYSTEMPATH/CodeIgniter.php on line 889.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 22:28:14 --> Undefined class constant 'self::WS'
+in SYSTEMPATH/CodeIgniter.php on line 889.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 22:31:17 --> Undefined class constant 'self::WS'
+in SYSTEMPATH/CodeIgniter.php on line 889.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 22:32:15 --> Undefined class constant 'self::WS'
+in SYSTEMPATH/CodeIgniter.php on line 889.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 22:33:10 --> Invalid argument supplied for foreach()
+in APPPATH/Views/admin/productos/index.php on line 44.
+ 1 APPPATH/Views/admin/productos/index.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/admin/productos/index.php', 44, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/productos/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/index', [], true)
+ 5 APPPATH/Controllers/Admin/Productos.php(34): view('admin/productos/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

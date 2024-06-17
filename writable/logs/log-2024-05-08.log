@@ -1,0 +1,94 @@
+CRITICAL - 2024-05-08 23:07:17 --> Trying to get property 'status' of non-object
+in APPPATH/Controllers/Carrito.php on line 251.
+ 1 APPPATH/Controllers/Carrito.php(251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'status\' of non-object', 'APPPATH/Controllers/Carrito.php', 251, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 23:07:23 --> Trying to get property 'status' of non-object
+in APPPATH/Controllers/Carrito.php on line 251.
+ 1 APPPATH/Controllers/Carrito.php(251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'status\' of non-object', 'APPPATH/Controllers/Carrito.php', 251, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 23:07:23 --> Trying to get property 'status' of non-object
+in APPPATH/Controllers/Carrito.php on line 251.
+ 1 APPPATH/Controllers/Carrito.php(251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'status\' of non-object', 'APPPATH/Controllers/Carrito.php', 251, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 23:07:23 --> Trying to get property 'status' of non-object
+in APPPATH/Controllers/Carrito.php on line 251.
+ 1 APPPATH/Controllers/Carrito.php(251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'status\' of non-object', 'APPPATH/Controllers/Carrito.php', 251, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 23:07:23 --> Trying to get property 'status' of non-object
+in APPPATH/Controllers/Carrito.php on line 251.
+ 1 APPPATH/Controllers/Carrito.php(251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'status\' of non-object', 'APPPATH/Controllers/Carrito.php', 251, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 23:07:38 --> Trying to get property 'status' of non-object
+in APPPATH/Controllers/Carrito.php on line 251.
+ 1 APPPATH/Controllers/Carrito.php(251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'status\' of non-object', 'APPPATH/Controllers/Carrito.php', 251, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 23:11:04 --> Undefined property: App\Controllers\Carrito::$load
+in APPPATH/Controllers/Carrito.php on line 365.
+ 1 APPPATH/Controllers/Carrito.php(365): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Carrito::$load', 'APPPATH/Controllers/Carrito.php', 365, [...])
+ 2 APPPATH/Controllers/Carrito.php(266): App\Controllers\Carrito->sendEmail('vazquez.gbrn@gmail.com', 'http://localhost:8888/gstore/ventas/nota/15', 'Carlos Gibran')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 23:14:41 --> Class 'App\Libraries\Sendgrid' not found
+in APPPATH/Controllers/Carrito.php on line 366.
+ 1 APPPATH/Controllers/Carrito.php(267): App\Controllers\Carrito->sendEmail('vazquez.gbrn@gmail.com', 'http://localhost:8888/gstore/ventas/nota/16', 'Carlos Gibran')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 23:15:37 --> Class 'App\Libraries\stdClass' not found
+in APPPATH/Libraries/Sendgrid.php on line 150.
+ 1 APPPATH/Libraries/Sendgrid.php(72): App\Libraries\Sendgrid->sendMail('Gracias por tu compra en Grandes Suplementos', '
+                <style>
+                    body {
+                    	font-family: "Trebuchet", sans-serif;
+                    }
+                    </style>
+                    <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+                    	<tr>
+                    		<td align="center" height="200">
+                                <h2>¡Hola, Carlos Gibran! ¡Gracias por tu compra!</h2>
+                                <p>Para consultar tu factura, da clic <a href="http://localhost:8888/gstore/ventas/nota/17">aquí</a>.</p>
+                                <p>http://localhost:8888/gstore/ventas/nota/17</p>
+                    		</td>
+                    	</tr>
+                    </table>', false, false, true)
+ 2 APPPATH/Controllers/Carrito.php(368): App\Libraries\Sendgrid->send_html('Gracias por tu compra en Grandes Suplementos', '
+                <style>
+                    body {
+                    	font-family: "Trebuchet", sans-serif;
+                    }
+                    </style>
+                    <table width="800" border="0" cellspacing="0" cellpadding="0" align="center">
+                    	<tr>
+                    		<td align="center" height="200">
+                                <h2>¡Hola, Carlos Gibran! ¡Gracias por tu compra!</h2>
+                                <p>Para consultar tu factura, da clic <a href="http://localhost:8888/gstore/ventas/nota/17">aquí</a>.</p>
+                                <p>http://localhost:8888/gstore/ventas/nota/17</p>
+                    		</td>
+                    	</tr>
+                    </table>', false, false, true)
+ 3 APPPATH/Controllers/Carrito.php(267): App\Controllers\Carrito->sendEmail('vazquez.gbrn@gmail.com', 'http://localhost:8888/gstore/ventas/nota/17', 'Carlos Gibran')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Carrito->checkout()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

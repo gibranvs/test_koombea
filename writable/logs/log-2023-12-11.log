@@ -1,0 +1,201 @@
+CRITICAL - 2023-12-11 15:47:38 --> Call to a member function getNoticiasRecientes() on null
+in APPPATH/Controllers/Home.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 15:57:14 --> Class 'App\Models\Admin\PaginasModel' not found
+in APPPATH/Controllers/Paginas.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Paginas->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 15:58:18 --> Class 'App\Models\Admin\PaginasModel' not found
+in APPPATH/Controllers/Paginas.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Paginas->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 15:59:32 --> Class 'App\Controllers\PaginasModel' not found
+in APPPATH/Controllers/Paginas.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Paginas->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:00:14 --> Class 'App\Controllers\PaginasModel' not found
+in APPPATH/Controllers/Paginas.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Paginas->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:01:00 --> syntax error, unexpected '*', expecting identifier (T_STRING) or '{'
+in APPPATH/Controllers/Paginas.php on line 4.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Paginas.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Paginas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Paginas')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Paginas')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Paginas', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:01:38 --> Invalid file: secciones/pestanas.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('secciones/pestanas.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('secciones/pestanas', [], true)
+ 3 APPPATH/Views/unam/pagina_estatica.php(25): view('secciones/pestanas', [...])
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/unam/pagina_estatica.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('unam/pagina_estatica', [], true)
+ 7 APPPATH/Controllers/Paginas.php(33): view('unam/pagina_estatica', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('titulo')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:04:58 --> Invalid file: unam/pagina_estatica.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('unam/pagina_estatica.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('unam/pagina_estatica', [], true)
+ 3 APPPATH/Controllers/Paginas.php(33): view('unam/pagina_estatica', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('pagina_2')
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:05:14 --> Invalid file: /unam/layouts/index2.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/unam/layouts/index2.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('/unam/layouts/index2', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('gstore/pagina_estatica', [], true)
+ 4 APPPATH/Controllers/Paginas.php(33): view('gstore/pagina_estatica', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('pagina_2')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:12:59 --> Call to a member function getNoticiasRecientes() on null
+in APPPATH/Controllers/Home.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:23:19 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Productos.php on line 76.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:27:13 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Productos.php on line 76.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:27:17 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Admin/Productos.php on line 76.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->save()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:36:45 --> Class 'App\Models\OpcionesProductosModel' not found
+in APPPATH/Controllers/Productos.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Productos->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:37:15 --> Class 'App\Controllers\GaleriaImagesModel' not found
+in APPPATH/Controllers/Productos.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Productos->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:37:34 --> Call to a member function where() on null
+in APPPATH/Controllers/Productos.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:48:49 --> Invalid argument supplied for foreach()
+in APPPATH/Views/suplementos/detalle.php on line 50.
+ 1 APPPATH/Views/suplementos/detalle.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/suplementos/detalle.php', 50, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 5 APPPATH/Controllers/Productos.php(52): view('suplementos/detalle', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:49:14 --> Invalid argument supplied for foreach()
+in APPPATH/Views/suplementos/detalle.php on line 50.
+ 1 APPPATH/Views/suplementos/detalle.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/suplementos/detalle.php', 50, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 5 APPPATH/Controllers/Productos.php(52): view('suplementos/detalle', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:49:46 --> Invalid argument supplied for foreach()
+in APPPATH/Views/suplementos/detalle.php on line 50.
+ 1 APPPATH/Views/suplementos/detalle.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/suplementos/detalle.php', 50, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 5 APPPATH/Controllers/Productos.php(52): view('suplementos/detalle', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:50:17 --> Invalid argument supplied for foreach()
+in APPPATH/Views/suplementos/detalle.php on line 51.
+ 1 APPPATH/Views/suplementos/detalle.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/suplementos/detalle.php', 51, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle', [], true)
+ 5 APPPATH/Controllers/Productos.php(52): view('suplementos/detalle', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Productos->detalle('producto-2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 20:49:30 --> Call to a member function where() on null
+in APPPATH/Controllers/Home.php on line 45.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->template()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 21:01:20 --> Invalid argument supplied for foreach()
+in APPPATH/Views/suplementos/detalle.php on line 51.
+ 1 APPPATH/Views/suplementos/detalle.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/suplementos/detalle.php', 51, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle.php', [], true)
+ 5 APPPATH/Controllers/Home.php(54): view('suplementos/detalle.php')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 21:02:38 --> Invalid argument supplied for foreach()
+in APPPATH/Views/suplementos/detalle.php on line 51.
+ 1 APPPATH/Views/suplementos/detalle.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/suplementos/detalle.php', 51, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/suplementos/detalle.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('suplementos/detalle.php', [], true)
+ 5 APPPATH/Controllers/Home.php(54): view('suplementos/detalle.php')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->detalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 21:17:34 --> Invalid argument supplied for foreach()
+in APPPATH/Views/secciones/catalogo.php on line 5.
+ 1 APPPATH/Views/secciones/catalogo.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/secciones/catalogo.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/secciones/catalogo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('secciones/catalogo', [], true)
+ 5 APPPATH/Views/gstore/pagina_estatica.php(30): view('secciones/catalogo', [...])
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/gstore/pagina_estatica.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('gstore/pagina_estatica', [], true)
+ 9 APPPATH/Controllers/Paginas.php(33): view('gstore/pagina_estatica', [...])
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Paginas->index('inicio')
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paginas))
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

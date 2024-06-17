@@ -1,0 +1,35 @@
+CRITICAL - 2023-07-12 19:52:32 --> Class 'App\Models\Admin\NoticiasModel' not found
+in APPPATH/Controllers/Home.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Home->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 19:52:46 --> Class 'App\Models\Admin\AuthModel' not found
+in APPPATH/Libraries/AuthManager.php on line 11.
+ 1 APPPATH/Controllers/Admin/Login.php(27): App\Libraries\AuthManager::logIn('gtc', 'f0578f1e7174b1a41c4ea8c6e17f7a8a3b88c92a')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Login->valida()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 20:27:03 --> Class 'App\Controllers\Admin\GaleriaImagesModel' not found
+in APPPATH/Controllers/Admin/Galerias.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Galerias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 20:30:14 --> syntax error, unexpected ';', expecting identifier (T_STRING) or '{'
+in APPPATH/Controllers/Admin/Galerias.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Admin/Galerias.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Galerias')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Galerias')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin\\Galerias')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Admin\\Galerias', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 20:30:32 --> Class 'App\Models\CategoriasModel' not found
+in APPPATH/Controllers/Admin/Galerias.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Admin\Galerias->__Construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

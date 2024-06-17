@@ -1,0 +1,11 @@
+CRITICAL - 2024-01-31 16:52:57 --> Argument 1 passed to CodeIgniter\Pager\Pager::links() must be of the type string, null given, called in /Applications/mamp/htdocs/gstore/app/Views/admin/productos/index.php on line 66
+in SYSTEMPATH/Pager/Pager.php on line 79.
+ 1 APPPATH/Views/admin/productos/index.php(66): CodeIgniter\Pager\Pager->links(null, 'gstore')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/productos/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/productos/index', [], true)
+ 5 APPPATH/Controllers/Admin/Productos.php(50): view('admin/productos/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Productos->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Productos))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
