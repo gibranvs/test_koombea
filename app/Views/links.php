@@ -9,7 +9,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-3">
-			<a href="<?= base_url() ?>" class="back_btn"><- BACK</a>
+			<a href="<?= base_url() ?>" class="back_btn">< BACK</a>
 		</div>
 	</div>
 	<div id="table_container">
